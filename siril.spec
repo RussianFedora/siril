@@ -21,7 +21,9 @@ BuildRequires:	pkgconfig(fftw3)
 BuildRequires:	pkgconfig(gsl)
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(libconfig)
+%if 0%{?fedora} >= 24
 BuildRequires:	pkgconfig(libjpeg)
+%endif
 BuildRequires:	pkgconfig(libpng)
 BuildRequires:	pkgconfig(libraw)
 BuildRequires:	pkgconfig(libtiff-4)
