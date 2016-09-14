@@ -1,7 +1,7 @@
 Summary:	Astronomical image processing software for Linux
 Name:		siril
 Version:	0.9.4
-Release:	1%{?dist}
+Release:	2%{?dist}
 
 License:	GPLv3+
 URL:		http://free-astro.org/index.php/Siril
@@ -30,9 +30,11 @@ BuildRequires:	pkgconfig(libtiff-4)
 BuildRequires:	pkgconfig(opencv)
 
 %description
-SIRIL is an abbreviation for nothing except IRIS reversed with
-a trailing L added for linux(though Siril has nothing linux-specific). 
-It's an astronomical image processing software for Linux.
+Siril is an image processing tool specially tailored for noise reduction and
+improving the signal/noise ratio of an image from multiple captures, as
+required in astronomy. Siril can align automatically or manually, stack and
+enhance pictures from various file formats, even images sequences (movies and
+SER files).
 
 
 %prep
@@ -95,5 +97,8 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 
 %changelog
+* Wed Sep 14 2016 Cyril Richard <lock042@gmail.com> - 0.9.4-2
+- update description
+
 * Tue Sep 13 2016 Arkady L. Shane <ashejn@russianfedora.pro> - 0.9.4-1
 - initial build
